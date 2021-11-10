@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 顶部信息栏 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="44dp"
+    android:layout_below="@+id/status_bar"
+    android:layout_alignParentTop="false"
+    android:background="#FFF">
+
+    <!-- 左手边按钮，设置内部重心偏向为垂直居中 -->
+
+    <ImageView
+        android:id="@+id/btn_title_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@mipmap/back_icon" />
+
+    <!-- 文本标题控件，设置布局为居中 -->
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#222"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- 按钮控件，设置布局为偏右 -->
+
+    <!--    <View-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="0.5dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:background="#cccccc" >-->
+    <!--    </View>-->
+
+</RelativeLayout>
